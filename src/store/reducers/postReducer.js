@@ -16,16 +16,16 @@ const postReducer = (state = initialState, action) => {
       return {
         posts: newPost,
       };
-    case "EDIT_POST":
-     return state.map(post => {
-        if (post.id === action.id) {
-          return {
-            ...post,
-            ...action.post,
-          };
-        }
-        return post;
-      });
+    // case "EDIT_POST":
+    //  return state.map(post => {
+    //     if (post.id === action.id) {
+    //       return {
+    //         ...post,
+    //         ...action.post,
+    //       };
+    //     }
+    //     return post;
+    //   });
     default:
       return state;
   }
