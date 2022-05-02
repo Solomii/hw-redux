@@ -6,10 +6,6 @@ export const deletePost = (id) => {
   return { type: "DELETE_POST", id }
 }
 
-// export const editPost = (id, post) => {
-//   return {
-//     type: "EDITE_POST",
-//     id,
-//     post,
-//   }
-// }
+export const editPost =  (data) => {
+  return { type: "EDITE_POST", payload:data}
+}

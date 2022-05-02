@@ -32,17 +32,6 @@ const useStyles = makeStyles({
 export const PostDetail = ({ post }) => {
   const classes = useStyles();
 
-  // const [edit, setEdit] = useState(false);
-
-  //  const handleEdit = (post) => {
-  //   const updatePost = {
-  //     id: post.id,
-  //     title: post.title,
-  //     content: post.content,
-  //   }
-  //   dispatch()
-  // }
-  
    const dispatch = useDispatch();
   return (
     <Container className={classes.container}>
